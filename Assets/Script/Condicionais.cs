@@ -10,10 +10,10 @@ public class Condicionais : MonoBehaviour
     [SerializeField] int _int1;
     [SerializeField] int _int2;
 
-    string _str1;
+    [SerializeField] string _str1;
     string _str2;
 
-    bool _bl1;
+    [SerializeField] bool _bl1;
     bool _bl2;
 
     // > more than
@@ -22,10 +22,14 @@ public class Condicionais : MonoBehaviour
     // <= less than or equal
     // != different
     // == equals
+    // && and
+    // || or
 
     // Start is called before the first frame update
     void Start()
     {
+        _str1 = "multiply";
+
         if (_int1 == 1)
         {
             _str1 = "a mimir";
@@ -36,6 +40,40 @@ public class Condicionais : MonoBehaviour
         if (_int1 == _int2)
         {
             Debug.Log("_int1 is equal to _int2");
+        }
+
+        if (_int1 == 1)
+        {
+            Debug.Log("Stage 1 unlocked");
+        }
+        else
+        {
+            Debug.Log("Stage 1 locked");
+        }
+
+        if (_str1 == "multiply")
+        {
+            _int1 = _int1 * _int2;
+        }
+        else
+        {
+            _int1 = _int1 + _int2;
+        }
+        Debug.Log("result is " + _int1);
+
+        if (_int1 == 2)
+        {
+            _str1 = "Open passage";
+        }
+        else
+        {
+            _str1 = "Blocked passage";
+        }
+        Debug.Log(_str1);
+
+        if (_int1 == _int2 && _bl1 == true)
+        {
+            Debug.Log("Enter stage");
         }
     }
 

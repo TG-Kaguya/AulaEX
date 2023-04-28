@@ -154,6 +154,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _int1: 1
   _int2: 1
+  _str1: 
+  _bl1: 0
 --- !u!4 &72603917
 Transform:
   m_ObjectHideFlags: 0
