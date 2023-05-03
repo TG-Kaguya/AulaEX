@@ -33,22 +33,22 @@ public class Condicionais : MonoBehaviour
         if (_int1 == 1)
         {
             _str1 = "a mimir";
-            Debug.Log("_int1 is 1");
-            Debug.Log("_str1 is " + _str1);
+            //Debug.Log("_int1 is 1");
+            //Debug.Log("_str1 is " + _str1);
         }
 
         if (_int1 == _int2)
         {
-            Debug.Log("_int1 is equal to _int2");
+            //Debug.Log("_int1 is equal to _int2");
         }
 
         if (_int1 == 1)
         {
-            Debug.Log("Stage 1 unlocked");
+            //Debug.Log("Stage 1 unlocked");
         }
         else
         {
-            Debug.Log("Stage 1 locked");
+            //Debug.Log("Stage 1 locked");
         }
 
         if (_str1 == "multiply")
@@ -59,7 +59,7 @@ public class Condicionais : MonoBehaviour
         {
             _int1 = _int1 + _int2;
         }
-        Debug.Log("result is " + _int1);
+        //Debug.Log("result is " + _int1);
 
         if (_int1 == 2)
         {
@@ -73,7 +73,7 @@ public class Condicionais : MonoBehaviour
 
         if (_int1 == _int2 && _bl1 == true)
         {
-            Debug.Log("Enter stage");
+            //Debug.Log("Enter stage");
         }
     }
 
